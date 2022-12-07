@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: none;
+    font-family: tahoma;
+}
+
+body{
+    background-image: url("../imagens/fundo.jpg");
+    background-size: cover;
+    background-attachment:fixed ;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fundo{
+    background-color: rgba(255, 255, 255, 0.479);
+    padding: 40px 15px;
+    border-radius: 20px;
+    width: 600px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+h1::after{
+    content: "";
+    height: 5px;
+    width: 400px;
+    max-width: 600px;
+    display: block;
+    background-color: currentColor;
+    margin: 10px auto;
+
+}
+
+/*Inputs*/
+
+input[type=number],input[type=text]{
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/*Box*/
+
+.box{
+    color:black;
+    margin: 20px;
+    text-align: center;
+    text-transform:uppercase ;
+    font-size: 20px;
+}
+
+.box p{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*Botão calcular*/
+
+.center{
+    text-align: center;
+}
+
+button{
+    padding: 15px;
+    width: calc(100% - 40px);
+    border-radius: 20px;
+    background-color: tomato;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    transition: .25s ease-in-out;
+}
+
+button:hover{
+    background-color: rgb(168, 2, 2);
+    color: white;
+}
+
+/*Resultado*/
+
+#res{
+    background-color: black;
+    color: rgb(231, 231, 0);
+    padding: 30px 20px;
+    border-radius: 20px;
+    border:2px solid rgb(231, 231, 0);
+    height: 220px;
+    width: calc(100% - 40px);
+    margin: 10px auto;
+    font-size: 22px;
+}
+
+@media  screen and (max-width:600px){
+    .fundo{
+        margin: 0 20px;
+    }
+}
