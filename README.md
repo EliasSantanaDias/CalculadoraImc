@@ -1,2 +1,2 @@
 # CalculadoraImc
-Calculadora JavaScript criada para aula no youtube 
+Calculadora imc criada com objetivo de instruir iniciantes através de aulas no youtube
